@@ -1,0 +1,112 @@
+h1 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#random-joke {
+    margin: 2rem 0;
+}
+
+.header {
+    color: black;
+    background-color: rgb(4, 118, 118);
+    text-align: center;
+    font-size: x-large;
+    padding: 1% 0;
+
+    user-select: none;
+    font-family: "helvetica";
+    height: 70px;
+    width: auto;
+    grid-area: header;
+    line-height: 70px;
+}
+
+.side {
+    background-color: rgb(26, 170, 170);
+    text-align: center;
+    grid-area: side;
+    padding-top: 10%;
+    border-top: 20px solid black;
+    border-left: 20px solid black;
+    border-bottom: 20px solid black;
+    
+
+
+
+}
+
+.card {
+    background-image: url("img/last\ ned.png");
+    background-size: 120%;
+    text-align: center;
+    font-size: large;
+    grid-area: card;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    font-family: "helvetica";
+    border: 20px solid black;
+}
+
+.page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 0fr 1fr 30px;
+    grid-template-areas: 'header header'
+        'side card'
+        'footer footer';
+}
+
+.footer {
+    background-color: rgb(39, 64, 65);
+    grid-area: footer;
+    color: white;
+    text-align: right;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    grid-area: footer;
+    padding-right: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    div.page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr 4fr 20px;
+        grid-template-areas:
+            'header'
+            'side'
+            'card'
+            'footer';
+    }
+}
+
+.catpic {
+    padding-top: 20px;
+}
+
+b {
+    background-color: black;
+    border: 5px solid black;
+    color: antiquewhite;
+}
+
+.link {
+    padding: 5px;
+}
+
+.quote {
+    font-size: large;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.rockPic {
+    padding-top: 100px;
+}
